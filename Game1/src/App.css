@@ -1,0 +1,69 @@
+body, html, #root {
+  height: 100%;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #222;
+  color: white;
+  position: relative;
+  padding: 20px;
+}
+
+.overlay {
+  background-image: url("https://img.freepik.com/premium-vector/simple-school-seamless-pattern-with-tic-tac-toe-game-black-white-background_172597-451.jpg");
+  background-size: cover;
+  opacity: 0.2;
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: 0;
+}
+
+.home-title {
+  font-size: 3rem;
+  z-index: 1;
+  margin-bottom: 20px;
+}
+
+.button-row, .difficulty-buttons {
+  z-index: 1;
+  display: flex;
+  gap: 15px;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.button-row button, .difficulty-buttons button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+}
+
+.blue-btn {
+  background-color: #2980b9;
+}
+
+.red-btn {
+  background-color: #e74c3c;
+}
+
+.easy-btn {
+  background-color: orange;
+}
+
+.medium-btn {
+  background-color: green;
+}
+
+.hard-btn {
+  background-color: purple;
+}
